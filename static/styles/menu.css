@@ -32,6 +32,10 @@ td>.name {
     font-weight: bold;
 }
 
+td>.description {
+    font-size: 20px;
+}
+
 td>.price {
     font-size: 20px;
 }

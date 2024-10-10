@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    border: 50px solid;
+    border-image: linear-gradient(to bottom, rgb(150, 0, 0), rgb(255, 189, 20)) 1;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: rgba(150, 0, 0, 0.5);
+}
+
+.welcome-text {
+    font-size: 60px;
+    color: rgb(150, 0, 0);
+}
+
+.menu-button-div {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 18.5vh;
+}
+
+.menu-button {
+    padding: 0;
+    padding-left: 3px;
+    padding-right: 3px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(255, 189, 20);
+    background-color: rgba(255, 189, 20, 0.5);
+    font-size: 40px;
+    color: rgb(255, 189, 20);
+}

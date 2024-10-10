@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="/static/styles/menu.css">
+</head>
+
+<body>
+    <table>
+        <tbody>
+            {% for pizza in pizzas %}
+            <tr>
+                <td>
+                    <p class="name">{{ pizza.name }}</a>
+                </td>
+                <td>
+                    <a href="/{{ pizza.name|lower|replace(' ','-') }}" target="_blank" class="image"><img src="{{ pizza.image }}"
+                            alt="{{ pizza.name }}"></a>
+                </td>
+                <td>
+                    <p class="price">{{ pizza.price }}$</p>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <div class="home-button-div">
+        <p class="home-button"><a href="/" target="_blank">Home</a></p>
+    </div>
+</body>
+
+</html>
